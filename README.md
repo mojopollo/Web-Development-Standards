@@ -14,6 +14,7 @@ Environment setup, notes, guidelines and standards.
 For any packages that need to be installed you will do the following shortcuts:
 
 Note: "Cmd" is for Mac's "Ctrl" for everything else
+
 * Cmd/Ctrl + Shift + P
 * Install Package + Enter
 * <package name> + Enter
