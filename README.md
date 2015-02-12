@@ -17,7 +17,7 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 * Cmd/Ctrl + Shift + P
 * Install Package + Enter
-* <package name> + Enter
+* **<package name>** + Enter
 
 ***
 
