@@ -21,12 +21,12 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 ***
 
-## Javascript - Setup linter (JSLint)
+## JavaScript - Setup linter (JSLint)
 * Install sublime package: **JSLint**
 * Go to: Sublime -> Preferences -> Package Settings -> JSLint -> "Settings - Default"
 * Then go to: Sublime -> Preferences -> Package Settings -> JSLint -> "Settings - User"
 * Copy all contents from "Settings - Default" tab to "Settings - User" tab and Save
-* Replace the "options" array with the following and Save:
+* In "Settings - User" replace the "options" array with the following and Save:
 ```json
 // an array of options to pass to jslint.
 "options" : [
@@ -61,5 +61,29 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 ***
 
-## Coffeescript - Setup linter (BetterCoffeeScript)
-* 
+## CoffeeScript - Setup linter (Better CoffeeScript)
+* Install CoffeeScript :
+```bash
+npm install -g coffee-script
+```
+* Install sublime package: **Better CoffeeScript**
+* Go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - Default"
+* Then go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - User"
+
+***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
