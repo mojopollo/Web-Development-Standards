@@ -21,8 +21,8 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 ***
 
-## Javascript - Setup linter
-* Install sublime package: JSLint
+## Javascript - Setup linter (JSLint)
+* Install sublime package: **JSLint**
 * Go to: Sublime -> Preferences -> Package Settings -> JSLint -> "Settings - Default"
 * Then go to: Sublime -> Preferences -> Package Settings -> JSLint -> "Settings - User"
 * Copy all contents from "Settings - Default" tab to "Settings - User" tab and Save
@@ -61,5 +61,5 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 ***
 
-## Coffeescript - Setup linter
+## Coffeescript - Setup linter (BetterCoffeeScript)
 * 
