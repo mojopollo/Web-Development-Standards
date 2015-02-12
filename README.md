@@ -64,11 +64,30 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 ## CoffeeScript - Setup linter (Better CoffeeScript)
 * Install CoffeeScript :
 ```bash
-npm install -g coffee-script
+$ npm install -g coffee-script
 ```
 * Install sublime package: **Better CoffeeScript**
 * Go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - Default"
 * Then go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - User"
+* Copy all contents from "Settings - Default" tab to "Settings - User" tab and Save
+* In "Settings - User" , set the following :
+```json
+/*
+	The directory containing your coffee binary. Usually
+	/usr/local/bin or /usr/bin.
+*/
+"binDir": "coffeescript-install-directory"
+```
+set coffeescript-install-directory to the install directory of the **coffee** command, for example the command :
+```bash
+$ which coffee
+```
+returns
+```bash
+/usr/local/bin/coffee
+```
+the CoffeeScript install directory is **/usr/local/bin/** (do not include the word "coffee")
+* Note: ```Alt + Shift + D``` will preview the compiled CoffeeScript code
 
 ***
 
