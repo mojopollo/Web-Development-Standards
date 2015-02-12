@@ -10,6 +10,16 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Sublime Text 3 - Installing packages
+For any packages that need to be installed you will do the following shortcuts:
+
+Note: "Cmd" is for Mac's "Ctrl" for everything else
+* Cmd/Ctrl + Shift + P
+* Install Package + Enter
+* <package name> + Enter
+
+***
+
 ## Javascript - Setup linter
 * Install sublime package: JSLint
 * Go to: Sublime -> Preferences -> Package Settings -> JSLint -> "Settings - Default"
@@ -50,3 +60,5 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Coffeescript - Setup linter
+* 
