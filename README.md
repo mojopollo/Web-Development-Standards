@@ -47,7 +47,10 @@ import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7
 
 ]
 ```
-* From now on, all javascript files on Save, will run through JSLint, get familiar with common errors and guidelines here: http://www.jslint.com/lint.html
+* From now on, all javascript files on Save, will run through JSLint and output errors until you follow the strict guidelines
+* Get familiar with common errors and guidelines here: http://www.jslint.com/lint.html
+* Get help on fixing the errors here: http://jslinterrors.com/
+* The goal is to have "0 errors" on Save
 
 ***
 
