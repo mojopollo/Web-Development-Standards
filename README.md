@@ -13,7 +13,7 @@ Environment setup, notes, guidelines and standards.
 ## Sublime Text 3 - Installing packages
 For any packages that need to be installed you will do the following shortcuts:
 
-Note: "Cmd" is for Mac's "Ctrl" for everything else
+Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 * Cmd/Ctrl + Shift + P
 * Install Package + Enter
