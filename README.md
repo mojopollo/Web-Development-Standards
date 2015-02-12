@@ -62,21 +62,21 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 ***
 
 ## CoffeeScript - Setup linter (Part 1 of 3 : Better CoffeeScript)
+* Install Node :
+```bash
+$ brew install node
+```
 * Install CoffeeScript :
 ```bash
 $ npm install -g coffee-script
 ```
 * Install sublime package: **Better CoffeeScript**
-* Go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - Default"
-* Then go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - User"
-* Copy all contents from "Settings - Default" tab to "Settings - User" tab and Save
+* Go to: Sublime -> Preferences -> Package Settings -> Better CoffeeScript -> "Settings - User"
 * In "Settings - User" , set the following :
 ```json
-/*
-	The directory containing your coffee binary. Usually
-	/usr/local/bin or /usr/bin.
-*/
-"binDir": "coffeescript-install-directory"
+{
+    "binDir": "coffeescript-install-directory"
+}
 ```
 set coffeescript-install-directory to the install directory of the **coffee** command, for example the command :
 ```bash
@@ -98,6 +98,8 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 ***
 
 ## CoffeeScript - Setup linter (Part 3 of 3 : SublimeLinter-coffee)
-* Install sublime package: **SublimeLinter**
+* Install sublime package: **SublimeLinter-coffee**
+* Go to: Sublime -> Preferences -> Package Settings -> SublimeLinter -> "Settings - User"
 
+***
 
