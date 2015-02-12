@@ -61,7 +61,7 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 
 ***
 
-## CoffeeScript - Setup linter (Better CoffeeScript)
+## CoffeeScript - Setup linter (Part 1 of 3 : Better CoffeeScript)
 * Install CoffeeScript :
 ```bash
 $ npm install -g coffee-script
@@ -92,18 +92,12 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## CoffeeScript - Setup linter (Part 2 of 3 : SublimeLinter)
+* Install sublime package: **SublimeLinter**
 
+***
 
-
-
-
-
-
-
-
-
-
-
-
+## CoffeeScript - Setup linter (Part 3 of 3 : SublimeLinter-coffee)
+* Install sublime package: **SublimeLinter**
 
 
