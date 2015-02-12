@@ -86,7 +86,7 @@ returns
 ```bash
 /usr/local/bin/coffee
 ```
-the CoffeeScript install directory is ```/usr/local/bin/``` (do not include the word "coffee")
+the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "coffee")
 
 * Note: ```Alt + Shift + D``` will preview the compiled CoffeeScript code
 
