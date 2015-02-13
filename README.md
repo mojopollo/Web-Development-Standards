@@ -110,3 +110,21 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## CoffeeScript - Autocomplete triggers
+* Go to: Sublime -> Preferences -> "Settings - User"
+* adding the following will enable autocomplete
+```json
+{
+    "auto_complete_triggers":
+    [
+        {
+            "characters": ".@",
+            "selector": "source.coffee, source.litcoffee, source.coffee.md"
+        }
+    ]
+}
+```
+* Note: you can add other syntax like ```*.php``` would be ```source.php``` and the auto complete behavior woud be the same for php syntax files
+
+***
+
