@@ -4,6 +4,25 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Local Package Manager - (Mac)
+* Follow instructions and install http://brew.sh/
+
+***
+
+## Install required binaries - (Mac)
+* ```brew install bash-completion```
+* ```brew install imagemagick```
+* ```brew install ghostscript```
+* ```brew install mcrypt```
+* ```brew install node```
+* ```brew install php55```
+* ```brew install php55-mcrypt```
+* ```brew install s3cmd```
+* ```brew install ssh-copy-id```
+* ```brew install wget```
+
+***
+
 ## Sublime Text 3 - Install
 * Download latests at http://www.sublimetext.com/3
 * Install package control from: https://packagecontrol.io/installation
