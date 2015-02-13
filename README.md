@@ -138,6 +138,7 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
     "ensure_newline_at_eof_on_save": true
 }
 ```
+* Quit and reopen Sublime Text 3
 
 ***
 
@@ -154,4 +155,5 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
     "bold_folder_labels": true
 }
 ```
+* Quit and reopen Sublime Text 3
 
