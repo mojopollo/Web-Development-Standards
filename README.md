@@ -30,11 +30,11 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
-## Git Branching Methodologies
+## Git Branching Methodology
 
 * http://nvie.com/posts/a-successful-git-branching-model/
 
-(http://nvie.com/img/git-model@2x.png)
+![Git Branching Methodology](http://nvie.com/img/git-model@2x.png)
 
 ***
 
