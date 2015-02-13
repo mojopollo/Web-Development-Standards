@@ -106,6 +106,7 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
     "coffee_path": "/usr/local/lib/node_modules/coffee-script/bin",
     "node_path": "/usr/local/bin",
 ```
-* Note: For this linter to work you must have ```Better CoffeeScrip -> CoffeeScript``` syntax highlighting selected for the linter to work
+* Note: For this linter to work you must have syntax highlighting set to ```Better CoffeeScript -> CoffeeScript``` in order for the coffee linter to work
+
 ***
 
