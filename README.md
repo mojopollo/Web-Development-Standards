@@ -128,6 +128,19 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## CoffeeScript - Indentation & white-space trimming
+* Go to: Sublime -> Preferences -> "Settings - User"
+```json
+{
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true
+}
+```
+
+***
+
 ## Sublime Text 3 - Optional helpful preferences
 * Go to: Sublime -> Preferences -> "Settings - User"
 ```json
