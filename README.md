@@ -128,3 +128,17 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## Sublime Text 3 - Optional helpful preferences
+* Go to: Sublime -> Preferences -> "Settings - User"
+```json
+{
+    "highlight_line": true,
+    "line_numbers": true,
+    "scroll_past_end": true,
+    "show_full_path": true,
+    "highlight_modified_tabs": true,
+    "enable_tab_scrolling": false,
+    "bold_folder_labels": true
+}
+```
+
