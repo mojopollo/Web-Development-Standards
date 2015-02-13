@@ -30,6 +30,61 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Setting Up Bash Environment - (Mac)
+* modify or create your bash profile via the terminal: ```nano ~/.bash_profile```
+```bash
+# Start - Git branch on bash prompt
+function parseGitBranch {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \[\1\]/'
+}
+
+function setBashPrompt {
+
+        local        BLUE="\[\033[0;34m\]"
+
+        # OPTIONAL - if you want to use any of these other colors:
+        local RED="\[\033[0;31m\]"
+        local LIGHT_RED="\[\033[1;31m\]"
+        local GREEN="\[\033[0;32m\]"
+        local LIGHT_GREEN="\[\033[1;32m\]"
+        local WHITE="\[\033[1;37m\]"
+        local LIGHT_GRAY="\[\033[0;37m\]"
+        # END OPTIONAL
+
+        local     DEFAULT="\[\033[0m\]"
+
+        # old git prompt
+        #PS1="\h:\W \u$BLUE\$(parseGitBranch) $DEFAULT\$"
+
+        # new path prompt
+        export PS1="\u@\h \w$LIGHT_GREEN\$(parseGitBranch) $DEFAULT$ "
+}
+
+setBashPrompt
+# End - Git branch on bash prompt
+
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+alias ll="ls -lah"
+
+# Put color in these commands
+alias composer='composer --ansi'
+alias grep='grep --color'
+
+# brew bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+```
+
+* Now your path inside a Git repo in terminal will more like this:
+```bash
+mojo@m ~/www/shindiig/website/repo [devel] $
+```
+
+***
+
 ## Sublime Text 3 - Install
 * Download latests at http://www.sublimetext.com/3
 * Install package control from: https://packagecontrol.io/installation
