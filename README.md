@@ -30,14 +30,6 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
-## Git Branching Methodology
-
-* http://nvie.com/posts/a-successful-git-branching-model/
-
-![Git Branching Methodology](http://nvie.com/img/git-model@2x.png)
-
-***
-
 ## Sublime Text 3 - Install
 * Download latests at http://www.sublimetext.com/3
 * Install package control from: https://packagecontrol.io/installation
@@ -196,3 +188,12 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 ```
 * Quit and reopen Sublime Text 3
 
+***
+
+## Git Branching Methodology
+
+* http://nvie.com/posts/a-successful-git-branching-model/
+
+![Git Branching Methodology](http://nvie.com/img/git-model@2x.png)
+
+***
