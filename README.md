@@ -93,6 +93,23 @@ mojo@m ~/www/shindiig/website/repo [devel] $
 
 ***
 
+## Install Composer (PHP)
+Download the composer phar file:
+```bash
+curl -s https://getcomposer.org/installer | php
+```
+Move the phar file into the bin folder :
+```bash
+mv composer.phar /usr/local/bin/composer
+```
+Now you have composer installed :
+```bash
+composer --version
+```
+
+
+***
+
 ## Sublime Text 3 - Install
 * Download latests at http://www.sublimetext.com/3
 * Install package control from: https://packagecontrol.io/installation
