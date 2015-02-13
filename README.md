@@ -89,6 +89,7 @@ returns
 the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "coffee")
 
 * Note: ```Alt + Shift + D``` will preview the compiled CoffeeScript code
+* Note: this package adds syntax highlight ```Better CoffeeScrip -> CoffeeScript``` which is the syntax you must have lighting for the linter in Part 3 t work
 
 ***
 
@@ -100,6 +101,11 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 ## CoffeeScript - Setup linter (Part 3 of 3 : SublimeLinter-coffee)
 * Install sublime package: **SublimeLinter-coffee**
 * Go to: Sublime -> Preferences -> Package Settings -> SublimeLinter -> "Settings - User"
-
+* make sure the following paths are set to your ```coffee``` binary and ```node``` binary
+```json
+    "coffee_path": "/usr/local/lib/node_modules/coffee-script/bin",
+    "node_path": "/usr/local/bin",
+```
+* Note: For this linter to work you must have ```Better CoffeeScrip -> CoffeeScript``` syntax highlighting selected for the linter to work
 ***
 
