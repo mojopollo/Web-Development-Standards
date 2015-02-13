@@ -23,6 +23,13 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Third development applications - (Mac)
+* https://iterm2.com/downloads.html
+* Spolight http://www.alfredapp.com/#download
+* MySQL Database Management for Mac OS X - http://www.sequelpro.com/
+
+***
+
 ## Sublime Text 3 - Install
 * Download latests at http://www.sublimetext.com/3
 * Install package control from: https://packagecontrol.io/installation
@@ -105,7 +112,12 @@ returns
 ```bash
 /usr/local/bin/coffee
 ```
-the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "coffee")
+the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "coffee"), so the config looks like:
+```json
+{
+    "binDir": "/usr/local/bin/"
+}
+```
 
 * Note: ```Alt + Shift + D``` will preview the compiled CoffeeScript code
 * Note: this package adds syntax highlight ```Better CoffeeScrip -> CoffeeScript``` which is the syntax you must have lighting for the linter in Part 3 t work
