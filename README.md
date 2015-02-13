@@ -20,6 +20,7 @@ Environment setup, notes, guidelines and standards.
 * ```brew install s3cmd```
 * ```brew install ssh-copy-id```
 * ```brew install wget```
+* ```brew install git```
 
 ***
 
@@ -82,6 +83,13 @@ fi
 ```bash
 mojo@m ~/www/shindiig/website/repo [devel] $
 ```
+
+***
+
+## Create your default SSH Key
+* ```cd ~/.ssh/```
+* ```ssh-keygen -t rsa``` and press enter 3 times (no password needed, id_rsa is the default name of your key)
+* You will now have 2 files in you ~/.ssh/ folder: ```~/.ssh/id_rsa``` and ```~/.ssh/id_rsa.pub```
 
 ***
 
