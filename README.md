@@ -23,10 +23,18 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
-## Third development applications - (Mac)
+## Third Party Development Applications - (Mac)
 * https://iterm2.com/downloads.html
 * Spolight http://www.alfredapp.com/#download
 * MySQL Database Management for Mac OS X - http://www.sequelpro.com/
+
+***
+
+## Git Branching Methodologies
+
+* http://nvie.com/posts/a-successful-git-branching-model/
+
+(http://nvie.com/img/git-model@2x.png)
 
 ***
 
