@@ -128,7 +128,7 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
-## CoffeeScript - Indentation & white-space trimming
+## Sublime Text 3 - Indentation & white-space trimming
 * Go to: Sublime -> Preferences -> "Settings - User"
 ```json
 {
