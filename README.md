@@ -4,23 +4,20 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
-## Local Package Manager - (Mac)
-* Follow instructions and install http://brew.sh/
+## Install Your Local Package Manager
+* Mac OS X: Follow instructions and install http://brew.sh/
+*
 
 ***
 
-## Install required binaries - (Mac)
-* ```brew install bash-completion```
-* ```brew install imagemagick```
-* ```brew install ghostscript```
-* ```brew install mcrypt```
-* ```brew install node```
-* ```brew install php55```
-* ```brew install php55-mcrypt```
-* ```brew install s3cmd```
-* ```brew install ssh-copy-id```
-* ```brew install wget```
-* ```brew install git```
+## Install required binaries
+* For OS X : ```brew install <package-name>```
+* For Ubuntu/Debian : ```sudo apt-get install <package-name>```
+* For Red Har/CentOS : ```sudo yum install <package-name>```
+* Install the following packages (OS X Example)
+```bash
+brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
+```
 
 ***
 
@@ -156,7 +153,7 @@ If for example, you would like to use a different version of jQuery, you change 
     "jquery": "~1.8.0"
   }
 ```
-Then use the install which will re-download the libraries with the correct version.
+Then use the install sub command which will re-download the libraries with the version specified.
 ```bash
 bower install
 ```
