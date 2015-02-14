@@ -25,7 +25,7 @@ Environment setup, notes, guidelines and standards.
 ***
 
 ## Third Party Development Applications - (Mac)
-* https://iterm2.com/downloads.html
+* Terminal https://iterm2.com/downloads.html
 * Spolight http://www.alfredapp.com/#download
 * MySQL Database Management for Mac OS X - http://www.sequelpro.com/
 
@@ -107,6 +107,59 @@ Now you have composer installed :
 composer --version
 ```
 
+***
+
+## Install Node.js
+```bash
+brew install node
+```
+* Note: this also installs the ```npm``` command which allows you install node packages later on.
+
+***
+
+## Install Bower (Node package)
+* Install Bower
+```bash
+npm install -g bower
+```
+
+***
+
+## Bower (Install jQuery Package Example)
+Instead of manually downloading the library/framework and committing in your repository, use the ```bower``` command to manage it for you:
+```bash
+mkdir my-bower-test
+cd my-bower-test
+```
+Create your bower.json file, this will hold the library names and their prespective versions of all packages installed in your project.
+You can just press ```Enter``` through all of the following questions asked to use the default answers.
+```bash
+bower init
+```
+To install jQuery use the following command :
+```bash
+bower install jquery --save
+```
+the ```--save``` flag will update your bower.json file with the latests version of jQuery.
+```bash
+cat bower.json
+```
+will now show your installed library
+```json
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+```
+If for example, you would like to use a different version of jQuery, you change the version in bower.json to
+```json
+  "dependencies": {
+    "jquery": "~1.8.0"
+  }
+```
+Then use the install which will re-download the libraries with the correct version.
+```bash
+bower install
+```
 
 ***
 
@@ -168,10 +221,6 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 ***
 
 ## CoffeeScript - Setup linter (Part 1 of 3 : Better CoffeeScript)
-* Install Node :
-```bash
-$ brew install node
-```
 * Install CoffeeScript :
 ```bash
 $ npm install -g coffee-script
