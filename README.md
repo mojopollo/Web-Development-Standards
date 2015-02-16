@@ -6,15 +6,18 @@ Environment setup, notes, guidelines and standards.
 
 ## Install Your Local Package Manager
 * Mac OS X: Follow instructions and install http://brew.sh/
-*
+* Windows: Follow instructions and install https://chocolatey.org/
+* Ubuntu/Debian: You already have apt-get
+* Red Hat/CentOS: You already have yum
 
 ***
 
 ## Install required binaries
-* For OS X : ```brew install <package-name>```
-* For Ubuntu/Debian : ```sudo apt-get install <package-name>```
-* For Red Har/CentOS : ```sudo yum install <package-name>```
-* Install the following packages (OS X Example)
+* Mac OS X : ```brew install <package-name>```
+* Windows: ```choco install <package-name>```
+* Ubuntu/Debian : ```sudo apt-get install <package-name>```
+* Red Hat/CentOS : ```sudo yum install <package-name>```
+* Install the following packages (Mac OS X Example)
 ```bash
 brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
 ```
@@ -22,9 +25,15 @@ brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcr
 ***
 
 ## Third Party Development Applications - (Mac)
-* Terminal https://iterm2.com/downloads.html
-* Spolight http://www.alfredapp.com/#download
-* MySQL Database Management for Mac OS X - http://www.sequelpro.com/
+* SSH Terminal https://iterm2.com/downloads.html
+* Spolight Replacement http://www.alfredapp.com/#download
+* MySQL Database Management Client - http://www.sequelpro.com/
+
+***
+
+## Third Party Development Applications - (Windows)
+* SSH Terminal http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+* MySQL Database Management Client - http://www.heidisql.com/
 
 ***
 
