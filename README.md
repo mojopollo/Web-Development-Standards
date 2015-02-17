@@ -194,30 +194,10 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 * In "Settings - User" replace the "options" array with the following and Save:
 ```json
 {
-    // an array of options to pass to jslint.
     "options" : [
-
-        // examples using predef flag.
-        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
-        // tolerate missing 'use strict' pragma.
-        // ,"--sloppy"
-        // suggest an indent level of two spaces.
+       "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
         ,"--indent", "2"
-        // assume node.js to predefine node globals.
         ,"--node"
-        // tolerate unfiltered for in.
-        //,"--forin"
-        // tolerate dangling _ in identifiers.
-        // ,"--nomen"
-        // tolerate many var statements per function.
-        // ,"--vars"
-        // tolerate ++ and --.
-        // ,"--plusplus"
-        // tolerate blocking -Sync methods
-        // ,"--stupid"
-        // tolerate comments starting with TODO
-        // ,"--todo"
-
     ]
 }
 ```
