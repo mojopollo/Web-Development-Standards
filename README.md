@@ -269,8 +269,10 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 * Go to: Sublime -> Preferences -> Package Settings -> SublimeLinter -> "Settings - User"
 * make sure the following paths are set to your ```coffee``` binary and ```node``` binary
 ```json
+{
     "coffee_path": "/usr/local/lib/node_modules/coffee-script/bin",
-    "node_path": "/usr/local/bin",
+    "node_path": "/usr/local/bin"
+}
 ```
 * Note: For this linter to work you must have syntax highlighting set to ```Better CoffeeScript -> CoffeeScript``` in order for the coffee linter to work
 
