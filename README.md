@@ -326,9 +326,9 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 ***
 
 ## Coding Style Guide (PHP)
-* Study and follow the following guides :
-* http://www.php-fig.org/psr/psr-1/
-* http://www.php-fig.org/psr/psr-2/
+* Study and follow the following :
+* Basic Coding Standard http://www.php-fig.org/psr/psr-1/
+* Coding Style Guide http://www.php-fig.org/psr/psr-2/
 
 ***
 
