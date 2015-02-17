@@ -325,6 +325,13 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## Coding Style Guide (PHP)
+* Study and follow the following guides :
+* http://www.php-fig.org/psr/psr-1/
+* http://www.php-fig.org/psr/psr-2/
+
+***
+
 ## Git Branching Methodology
 
 * http://nvie.com/posts/a-successful-git-branching-model/
