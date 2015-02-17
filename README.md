@@ -193,31 +193,33 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 * Copy all contents from "Settings - Default" tab to "Settings - User" tab and Save
 * In "Settings - User" replace the "options" array with the following and Save:
 ```json
-// an array of options to pass to jslint.
-"options" : [
+{
+    // an array of options to pass to jslint.
+    "options" : [
 
-    // examples using predef flag.
-    "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
-    // tolerate missing 'use strict' pragma.
-    // ,"--sloppy"
-    // suggest an indent level of two spaces.
-    ,"--indent", "2"
-    // assume node.js to predefine node globals.
-    ,"--node"
-    // tolerate unfiltered for in.
-    //,"--forin"
-    // tolerate dangling _ in identifiers.
-    // ,"--nomen"
-    // tolerate many var statements per function.
-    // ,"--vars"
-    // tolerate ++ and --.
-    // ,"--plusplus"
-    // tolerate blocking -Sync methods
-    // ,"--stupid"
-    // tolerate comments starting with TODO
-    // ,"--todo"
+        // examples using predef flag.
+        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
+        // tolerate missing 'use strict' pragma.
+        // ,"--sloppy"
+        // suggest an indent level of two spaces.
+        ,"--indent", "2"
+        // assume node.js to predefine node globals.
+        ,"--node"
+        // tolerate unfiltered for in.
+        //,"--forin"
+        // tolerate dangling _ in identifiers.
+        // ,"--nomen"
+        // tolerate many var statements per function.
+        // ,"--vars"
+        // tolerate ++ and --.
+        // ,"--plusplus"
+        // tolerate blocking -Sync methods
+        // ,"--stupid"
+        // tolerate comments starting with TODO
+        // ,"--todo"
 
-]
+    ]
+}
 ```
 * From now on, all javascript files on Save, will run through JSLint and output errors until you follow the strict guidelines
 * Get familiar with common errors and guidelines here: http://www.jslint.com/lint.html
