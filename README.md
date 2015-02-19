@@ -21,6 +21,7 @@ Environment setup, notes, guidelines and standards.
 ```bash
 brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
 ```
+* Note: on Mac OS X / Homebrew, if you get a cannot find php55 package, the correct package is ```homebrew/php/php55```
 
 ***
 
@@ -93,6 +94,7 @@ mojo@m ~/www/shindiig/website/repo [devel] $
 ***
 
 ## Create your default SSH Key
+* ```mkdir ~/.ssh/```
 * ```cd ~/.ssh/```
 * ```ssh-keygen -t rsa``` and press enter 3 times (no password needed, id_rsa is the default name of your key)
 * You will now have 2 files in you ~/.ssh/ folder: ```~/.ssh/id_rsa``` and ```~/.ssh/id_rsa.pub```
