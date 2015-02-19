@@ -152,15 +152,19 @@ cat bower.json
 ```
 will now show your installed library
 ```json
+{
   "dependencies": {
     "jquery": "~2.1.3"
   }
+}
 ```
 If for example, you would like to use a different version of jQuery, you change the version in bower.json to
 ```json
+{
   "dependencies": {
     "jquery": "~1.8.0"
   }
+}
 ```
 Then use the install sub command which will re-download the libraries with the version specified.
 ```bash
