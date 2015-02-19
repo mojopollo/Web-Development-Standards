@@ -316,6 +316,39 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
+## Updating your branch with latests from the ```devel``` branch
+As you work on your code there might be new code being pushed to devel that needs to be updated on your own branch.
+
+Use the following guide to merge new changes in ```devel``` into your branch, for example we will use the ```mojo``` branch
+
+* Before merging, make sure all your changes have been committed and pushed to bitbucket/github
+```bash
+git status
+git add --all
+git commit -am "these are my changes to my mojo branch"
+git status
+git push
+```
+* ```git status``` shows you any files that have been modified and need to be "added" for your commit
+* ```git add --all``` will add modified files and any new files you might have added
+* ```git commit -am "..."``` commits all "added" files along with a remark comment
+* ```git status``` should now confirm that your changes are ready to be pushed, any errors/messages or files you might have forgot to add will be listed here. Repeat this command until you see ```nothing to commit, working directory clean```
+* ```git push``` will push all your commits to bitbucket/github
+
+* Now that your ```mojo``` branch is clean, you can merge ```devel``` onto your own
+```bash
+git checkout devel
+git pull
+git checkout mojo
+git merge devel mojo
+```
+* ```git checkout devel``` switches over to the devel branch
+* ```git pull``` will update the devel branch with latests from bitbucket/github
+* ```git checkout mojo``` switches back to your branch
+* ```git merge devel mojo``` does the final merge to the mojo branch, you are up to date with the ```devel``` branch
+
+***
+
 ## Git Branching Methodology
 
 * http://nvie.com/posts/a-successful-git-branching-model/
