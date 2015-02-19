@@ -331,7 +331,7 @@ git push
 ```
 * ```git status``` shows you any files that have been modified and need to be "added" for your commit
 * ```git add --all``` will add modified files and any new files you might have added
-* ```git commit -am "..."``` commits all "added" files along with a remark comment
+* ```git commit -am "..."``` commits all "added" files along with a comment remark
 * ```git status``` should now confirm that your changes are ready to be pushed, any errors/messages or files you might have forgot to add will be listed here. Repeat this command until you see ```nothing to commit, working directory clean```
 * ```git push``` will push all your commits to bitbucket/github
 
