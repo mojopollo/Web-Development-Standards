@@ -101,6 +101,15 @@ mojo@m ~/www/shindiig/website/repo [devel] $
 
 ***
 
+## Update Your Bitbucket SSH Key
+* Login into bitbucket.org (Manage Account -> SSH Keys) and add your ```id_rsa.pub```.
+* To view your public SSH key, you execute following command:
+```bash
+cat ~/.ssh/id_rsa
+```
+
+***
+
 ## Install Composer (PHP)
 Download the composer phar file:
 ```bash
