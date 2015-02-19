@@ -105,7 +105,7 @@ mojo@m ~/www/shindiig/website/repo [devel] $
 * Login into bitbucket.org (Manage Account -> SSH Keys) and add your ```id_rsa.pub```.
 * To view your public SSH key, you execute following command:
 ```bash
-cat ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
 ```
 
 ***
