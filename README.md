@@ -134,6 +134,24 @@ brew install node
 
 ***
 
+## Check Node.js Version
+
+* We currently use Node.js 0.10.* for appgyver development
+* Check that your version of node is 0.10.* with ```node --version```
+* If you need to downgrade node, do the following
+```bash
+brew remove node
+brew tap homebrew/boneyard
+brew tap homebrew/versions
+cd /usr/local/
+brew versions node
+git checkout 51c3f4d Library/Formula/node.rb
+brew install node
+```
+* Note "git checkout" was executed for the specific version we wanted: ```0.10.35  git checkout 51c3f4d Library/Formula/node.rb```
+
+***
+
 ## Install Bower (Node package)
 * Install Bower
 ```bash
