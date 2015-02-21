@@ -148,7 +148,7 @@ brew versions node
 git checkout 51c3f4d Library/Formula/node.rb
 brew install node
 ```
-* Note "git checkout" was executed for the specific version we wanted: ```0.10.35  git checkout 51c3f4d Library/Formula/node.rb```
+* Note "git checkout ..." was executed for the specific node version we wanted from the "brew versions node" results: ```0.10.35  git checkout 51c3f4d Library/Formula/node.rb```
 
 ***
 
