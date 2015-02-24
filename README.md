@@ -4,6 +4,13 @@ Environment setup, notes, guidelines and standards.
 
 ***
 
+## Third Party Development Applications - (Mac)
+* SSH Terminal https://iterm2.com/downloads.html
+* Spolight Replacement http://www.alfredapp.com/#download
+* MySQL Database Management Client - http://www.sequelpro.com/
+
+***
+
 ## Install Your Local Package Manager
 * Mac OS X: Follow instructions and install http://brew.sh/
 * Windows: Follow instructions and install https://chocolatey.org/
@@ -22,13 +29,6 @@ Environment setup, notes, guidelines and standards.
 brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
 ```
 * Note: on Mac OS X / Homebrew, if you get a cannot find php55 package message, the correct package path is ```homebrew/php/php55``` instead of ```php55```
-
-***
-
-## Third Party Development Applications - (Mac)
-* SSH Terminal https://iterm2.com/downloads.html
-* Spolight Replacement http://www.alfredapp.com/#download
-* MySQL Database Management Client - http://www.sequelpro.com/
 
 ***
 
