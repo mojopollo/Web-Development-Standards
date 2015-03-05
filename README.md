@@ -102,11 +102,11 @@ mojo@m ~/www/shindiig/website/repo [devel] $
 ***
 
 ## Update Your Bitbucket SSH Key
-* Login into bitbucket.org (Manage Account -> SSH Keys) and add your ```id_rsa.pub```.
 * To view your public SSH key, you execute following command:
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
+* Login into bitbucket.org (Manage Account -> SSH Keys) and add your ```id_rsa.pub```.
 
 ***
 
@@ -160,6 +160,14 @@ npm install -g bower
 
 ***
 
+## Install Grunt (Node package)
+* Install Bower
+```bash
+npm install -g grunt
+```
+
+***
+
 ## Bower (Install jQuery Package Example)
 Instead of manually downloading the library/framework and committing in your repository, use the ```bower``` command to manage it for you:
 ```bash
@@ -208,6 +216,17 @@ bower install
 
 ***
 
+## Sublime Text 3 - Command line shortcut
+
+* In terminal run the following command ```whoami``` and replace the ```<username>``` below with your username
+```bash
+mkdir ~/bin/
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
+export PATH=/Users/<username>/bin:$PATH
+```
+
+***
+
 ## Sublime Text 3 - Installing packages
 For any packages that need to be installed you will do the following shortcuts:
 
@@ -238,6 +257,8 @@ Note: "Cmd" for Mac's, "Ctrl" for everything else
 * Get familiar with common errors and guidelines here: http://www.jslint.com/lint.html
 * Get help on fixing the errors here: http://jslinterrors.com/
 * The goal is to have "0 errors" on Save
+
+***
 
 ***
 
@@ -349,36 +370,48 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 
 ***
 
-## Updating your branch with latests from the ```devel``` branch
-As you work on your code there might be new code being pushed to devel that needs to be updated on your own branch.
-
-Use the following guide to merge new changes in ```devel``` into your branch, for example we will use the ```mojo``` branch
-
-* Before merging, make sure all your changes have been committed and pushed to bitbucket/github
-```bash
-git status
-git add --all
-git commit -am "these are my changes to my mojo branch"
-git status
-git push
-```
-* ```git status``` shows you any files that have been modified and need to be "added" for your commit
-* ```git add --all``` will add modified files and any new files you might have added
-* ```git commit -am "..."``` commits all "added" files along with a comment remark
-* ```git status``` should now confirm that your changes are ready to be pushed, any errors/messages or files you might have forgot to add will be listed here. Repeat this command until you see ```nothing to commit, working directory clean```
-* ```git push``` will push all your commits to bitbucket/github
-
-* Now that your ```mojo``` branch is clean, you can merge ```devel``` onto your own
+## Git - Creating Your feature/* Branch From The devel Branch
+* Name your branch according to the feature you are implementing, for example if you are implementing the calendar in the profile view, name it ```feature/profile-calendar```
 ```bash
 git checkout devel
 git pull
-git checkout mojo
-git merge devel mojo
+git checkout -b feature/profile-calendar
+git push -u origin feature/profile-calendar
 ```
-* ```git checkout devel``` switches over to the devel branch
-* ```git pull``` will update the devel branch with latests from bitbucket/github
-* ```git checkout mojo``` switches back to your branch
-* ```git merge devel mojo``` does the final merge to the mojo branch, you are up to date with the ```devel``` branch
+
+***
+
+## Git - Pushing Your Changes In feature/* Branch Over To Bitbucket
+* If for example the branch you working with is named ```feature/profile-calendar```
+```bash
+git checkout feature/profile-calendar
+*** Edit some files ***
+git status
+git add --all
+git commit -am "these are my comments regarding my updates"
+git status
+git push
+git status
+```
+* Note: ```git status``` should always show the messages ```nothing to commit, working directory clean``` and ```Your branch is up-to-date with ...``` , this means you have pushed all changes to bitbucket correctly
+
+***
+
+## Git - Updating Your feature/* Branches With The Latests From The devel Branch
+* If for example the branch you working with is named ```feature/profile-calendar```
+```bash
+git checkout devel
+git pull
+git checkout feature/profile-calendar
+git rebase devel
+git push
+```
+* Note: The rebase command should get the latests from devel without issues if there are no conflicts. If you get a message like "Your branch is in rebase mode" or "git rebase --continue" do the following
+```bash
+git rebase --abort
+git merge devel
+git push
+```
 
 ***
 
