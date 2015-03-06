@@ -415,6 +415,32 @@ git push
 
 ***
 
+## Git - Merging A feature/* Branch To The devel Branch
+* If you are responsible for auditing the feature/* branches and are ready to merge a approved branch over to the devel branch :
+```bash
+git checkout devel
+git pull
+git merge --no-ff feature/profile-calendar
+git push
+```
+
+***
+
+## Git - Deleting feature/* Branches
+* If for example you have already merged ```feature/profile-calendar``` into ```devel``` branch, you can now delete this branch as it no longer will be worked on
+```bash
+git checkout devel
+git branch -d feature/profile-calendar
+git push origin :feature/profile-calendar
+```
+* Note: be sure to include the ```:``` colon before your branch name
+* For this branch delete to take effect on everyone elses repository, they need to run the following command:
+```bash
+git fetch --prune
+```
+
+***
+
 ## Git Branching Methodology
 
 * http://nvie.com/posts/a-successful-git-branching-model/
