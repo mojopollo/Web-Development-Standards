@@ -352,7 +352,6 @@ the CoffeeScript install directory is ```/usr/local/bin/``` (without the word "c
 {
     "highlight_line": true,
     "line_numbers": true,
-    "scroll_past_end": true,
     "show_full_path": true,
     "highlight_modified_tabs": true,
     "enable_tab_scrolling": false,
