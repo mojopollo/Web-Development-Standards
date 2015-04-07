@@ -447,3 +447,9 @@ git fetch --prune
 ![Git Branching Methodology](http://nvie.com/img/git-model@2x.png)
 
 ***
+
+## Angular Style Guide
+Use the following guide(s) when creating your angular projects:
+* https://github.com/mgechev/angularjs-style-guide
+
+***
