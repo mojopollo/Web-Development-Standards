@@ -26,11 +26,11 @@ Environment setup, notes, guidelines and standards.
 * Red Hat/CentOS : ```sudo yum install <package-name>```
 * Install the following packages (Mac OS X Example)
 ```bash
+brew update
 brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
 ```
 * Mac OS X / Homebrew, required steps:
 ```bash
-brew update
 brew install homebrew/php/php55 php55-mcrypt
 ```
 
