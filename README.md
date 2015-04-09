@@ -28,7 +28,11 @@ Environment setup, notes, guidelines and standards.
 ```bash
 brew install bash-completion imagemagick ghostscript mcrypt node php55 php55-mcrypt s3cmd ssh-copy-id wget git
 ```
-* Note: on Mac OS X / Homebrew, if you get a cannot find php55 package message, the correct package path is ```homebrew/php/php55``` instead of ```php55```
+* Mac OS X / Homebrew, required steps:
+```bash
+brew update
+brew install homebrew/php/php55 php55-mcrypt
+```
 
 ***
 
